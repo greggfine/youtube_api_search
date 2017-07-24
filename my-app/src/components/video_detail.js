@@ -16,8 +16,8 @@ const url = `https://www.youtube.com/embed/${videoId}`;
   return(
     <div>
 
-      <h4>{vids.snippet.title}</h4>
-      <iframe src={url} allowFullScreen></iframe>
+      <h4 style={{textAlign: 'center'}}><strong>{vids.snippet.title}</strong></h4>
+      <iframe src={url} allowFullScreen className="vidDetail"></iframe>
     </div>
 
   )
